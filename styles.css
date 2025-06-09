@@ -1,59 +1,43 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('wedding-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    text-align: center;
 }
-.container {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-.header {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.names {
+
+.section1 .names, .section6 .countdown {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5em;
-    margin: 10px 0;
+    font-size: 3em;
 }
-.date {
-    font-size: 1.2em;
-    margin: 10px 0;
+
+.section2 .invitation, .section4 p, .section5 p {
+    font-size: 1.5em;
+    padding: 20px;
 }
-.schedule {
-    margin: 20px 0;
+
+.section3 .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 20px;
 }
-.schedule-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
+
+.section3 .calendar div {
+    padding: 10px;
+    border: 1px solid #ccc;
 }
-.schedule-item img {
-    width: 30px;
-    margin-right: 10px;
+
+.section7, .section8 {
+    padding: 20px;
 }
-.rsvp {
-    margin-top: 20px;
-}
-.rsvp input[type="text"] {
+
+.section7 input[type="text"], .section8 textarea {
     width: 80%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0;
 }
-.rsvp label {
-    display: block;
-    margin: 5px 0;
-}
-button {
+
+.section7 button {
     background: #333;
     color: #fff;
     padding: 10px 20px;
@@ -61,6 +45,51 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover {
+
+.section7 button:hover {
     background: #555;
+}
+
+.section8 textarea {
+    height: 100px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #1565c0; /* pink→blue */
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+td.highlight {
+  background: #FF7043; /* coral highlight instead of blue */
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
 }
