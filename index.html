@@ -8,9 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script type="module" src="script.js"></script>
     <section class="section1" style="background-image: url('foto1.jpg'); height: 100vh; background-size: cover; color: white; display: flex; align-items: center; justify-content: center;">
         <h1 class="names">Арман-Жазира</h1>
     </section>
+    <!-- <audio id="myAudio">
+  <source src="nemere.mp3?v=1" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio> -->
+
+<!-- <button onclick="playAudio()">Play Music</button> -->
+
+<script>
+//   var audio = document.getElementById("myAudio");
+
+  function playAudio() {
+    //   var audio = document.getElementById("myAudio");
+    //   audio.play().catch(function(error) {
+    //     console.error("Audio play failed:", error);
+    //   });
+    }
+  document.body.addEventListener('touchstart', playAudio);
+    window.addEventListener('scroll', playAudio);
+    window.addEventListener('keydown', playAudio);
+
+</script>
 
     <section class="section2">
         <p class="invitation">Құрметті қонақтар!</p>
