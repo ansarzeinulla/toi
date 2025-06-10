@@ -5,26 +5,47 @@ body {
     text-align: center;
 }
 
-.section1 .names, .section6 .countdown {
-    font-family: 'Great Vibes', cursive;
+.section1 .names{
     font-size: 3em;
+    height: 100vh;
+}
+
+.section1 .names {
+    margin-top: 50vh;
+}
+.names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .section2 .invitation, .section4 p, .section5 p {
-    font-size: 1.5em;
-    padding: 20px;
+    font-size: 1.2em;
 }
+
 
 .section3 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.table {
+    margin: 0 auto;
+    width: 80%;
+}
 .section3 .calendar div {
-    padding: 10px;
     border: 1px solid #ccc;
+}
+
+.countdown {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: -10vh;;
 }
 
 .section7, .section8 {
@@ -88,8 +109,6 @@ th, td {
 }
 
 td.highlight {
-  background: #FF7043; /* coral highlight instead of blue */
-  color: white;
-  font-weight: bold;
-  border-radius: 4px;
+    background: rgba(255, 255, 255, 0.3) url('/heart3.webp') center center no-repeat;
+    background-size: contain;
 }
